@@ -14,6 +14,14 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 header h1 {
@@ -21,6 +29,7 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -39,6 +48,7 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav ul li a {
@@ -100,6 +110,7 @@ footer a {
     color: #fff;
     font-size: 18px;
     line-height: 1.2;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-heading h2 {
@@ -111,11 +122,13 @@ footer a {
 
 .hero-form { 
     color: #024e76;
-    background-color: #fce138;
+    background-color: rgba(252, 225, 56, .8);
     padding: 20px;
     border: solid 3px #024e76;
     width: 40%;
     margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
 }
 
 .hero-form p {
@@ -135,6 +148,7 @@ footer a {
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 .hero-form label { 
@@ -147,6 +161,7 @@ footer a {
     padding: 5px;
     border: none;
     font-size: 15px;
+    border-radius: 10px;
 }
 /*universal section style*/
 section {
@@ -332,6 +347,7 @@ section {
     line-height: 1.5;
     font-size: 16px;
     font-style: normal;
+    
 }
 
 .contact-form input, .contact-form textarea {
@@ -343,6 +359,7 @@ section {
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    border-radius: 10px;
 }
 
 .contact-form button {
@@ -353,6 +370,7 @@ section {
     text-align:  center;
     padding: 15px 0;
     font-size: 16px;
+    border-radius: 10px;
 }
 
 .contact-info a {
@@ -364,6 +382,7 @@ section {
    header {
        padding-bottom: 0;
        justify-content: center;
+       position: relative;
    }
 
    header h1 {
